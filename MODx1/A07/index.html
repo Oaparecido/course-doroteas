@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalhando com mídias em html</title>
+</head>
+<body>
+  <h1>Aula07 - Trabalhando</h1>
+
+  <h2>Imagens dinâmicas:</h2>
+  <p>
+    Imagens dinamicas, são importantes para conseguirmos trabalhar <br>
+    em diferentes dispositivos. Seja uma tela grande, como o desktop <br>
+    seja no pocket do Lincoln.
+  </p>
+
+  <picture>
+    <source media="(max-width:700px)" srcset="midia/imagens/pequena.png" type="image/png">
+    <source media="(max-width:1000px)" srcset="midia/imagens/media.png" type="image/png">
+    <img src="midia/imagens/grande.png" alt="Exibindo a imagem grande para telas grandes.">
+  </picture>
+
+  <h2>Reproduzindo audios</h2>
+  <p>
+    Vamos aprender a reproduzir audios dentro do nosso site, CARALHO.
+  </p>
+
+  <!-- 
+    O código a baixo é responsável por reproduzir audios dentro do navegador.
+    Pode ser que outros navegadore não funcionem, isso é por causa de compatibilidade.
+    Temos diversos tipos de arquivos referentes a audio, como por exemplo:
+    mp3 | wav | ogg
+  -->
+  <audio preload="metadata" controls>
+    <source src="midia/christmas.mp3" type="audio/mpeg">
+    <source src="midia/helium-tracktribe.mp3" type="audio/mpeg">
+    <p>
+      Infelizmente seu navegador não consegue reproduzir o CARALHO.<br>
+      <a href="midia/helium-tracktribe.mp3">Clique aqui para baixar o audio</a>
+    </p>
+  </audio>
+  
+</body>
+</html>
